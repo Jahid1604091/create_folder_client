@@ -6,6 +6,7 @@ import MenuItems from './MenuItems';
 export default function Folders({folders,handleAdd,handleDelete}) {
   return (
     <Wrapper>
+     
       <ul>
         {folders?.map((menu, index) => {
           const depthLevel = 1;

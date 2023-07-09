@@ -53,12 +53,15 @@ const Homepage = () => {
         fetchFolders()
     }, [stateChange])
 
+    console.log(folders?.length)
     return (
         <Wrapper className="page-100">
             <div className="section">
                 <div className="section-center">
                     <h4>Create Folder</h4>
-                    <Folders folders={folders} handleAdd={handleAdd} handleDelete={handleDelete} />
+                  
+                  <Folders folders={folders} handleAdd={handleAdd} handleDelete={handleDelete} />
+                  
                 </div>
             </div>
         </Wrapper>
